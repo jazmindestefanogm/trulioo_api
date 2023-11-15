@@ -1,43 +1,23 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
-  ],
-  "profile": { "name": "typicode" },
   "short_code": { "data": "ABCDE" },
   "signup_success": {
-    "id": 1,
-    "body": "¡Registro exitoso!",
-    "statusCode": 400,
-    "rules": [
-      {
-        "target": "body",
-        "modifier": "password",
-        "value": "(?=.*[A-Z])(?=.*[0-9]).{8,}",
-        "invert": false,
-        "operator": "regex"
-      }
-    ]
+    "id": "",
+    "body": "",
+    "statusCode": 200
   },
   "signup_error": {
-    "id": 2,
-    "body": "La contraseña no cumple con los requisitos.",
+    "id": "",
+    "body": "",
     "statusCode": 400
   },
   "signin_success": {
-    "id": 1,
-    "body": "¡Inicio de sesión exitoso!",
-    "statusCode": 200,
-    "rules": [
-      { "type": "BODY_EQUALS", "key": "username", "value": "usuario_registrado", "invert": false },
-      { "type": "BODY_EQUALS", "key": "password", "value": "contrasena_registrada", "invert": false }
-    ]
+    "id": "",
+    "body": "",
+    "statusCode": 200
   },
   "signin_error": {
-    "id": 2,
-    "body": "Usuario o contraseña incorrectos",
+    "id": "",
+    "body": "",
     "statusCode": 400
   }
 }
